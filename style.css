@@ -1,0 +1,28 @@
+#title {
+font-weight: bold;
+font-variant: small-caps;
+}
+#boi {
+margin-left: 50px;
+}
+    
+#one {
+height: 380px;
+width: 250px;
+border: 2px black solid;
+border-radius: 20px;
+}  
+.container {
+background-color: lightblue;
+border: solid darkblue 2px;
+border-radius: 20px;
+}
+.copy_right_footer {
+color: black;
+bottom: 0;
+width: 100%;
+background-color: lightgrey;
+line-height: 3;
+text-align: center;
+font-weight: bold;
+}

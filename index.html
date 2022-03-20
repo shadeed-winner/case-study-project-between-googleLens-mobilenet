@@ -1,0 +1,214 @@
+<html>
+<head>
+<title> Case study project </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+<h4 id="title">Case study between Google Lens and Mobilenet<br>Which is better?</h4>
+<img src="https://th.bing.com/th/id/OIP.ukYy7ldJSGaRs9wdGPFnFgAAAA?w=207&h=163&c=7&r=0&o=5&pid=1.7">
+<img height="75" width="75" src="https://www.freepngimg.com/download/street_fighter/93567-universe-dc-kahn-vs-text-injustice-mortal.png">
+<img id="boi" src="https://drive.google.com/uc?export=download&id=1xmxgAYeTqJizwNbTKn5whnKuM7qU6zgT">
+<hr>
+<div class="container">
+<ol>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.1&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.1&disp=thd&attbid=ANGjdJ8j5rSOZIab2PK6T8Iy4JrPGeD6Otsj2pFteDY07eiA35LtIxc3vWaxvIq-72or38_A1a-4_sUGgsNmi75whq8aEBSpRm-AZwH6uX84koYcUCLaWVCcX18KqVo&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Lenovo Thinkpad<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Monitor<span>
+</h5>
+<div style="text-align: center;" class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.2&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.2&disp=thd&attbid=ANGjdJ9ohD_q7skDhSJJTe53lRw-uf3GZoZdJHkrXF28HxQ7QGiMHKzCjHjWs7_DHG_2XQmfaEawxdRG_gDBClVuUWdv-ktHIPpZYRY8TxQnnIlkx7J8MFcEeeJAM8I&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Tsavorite Garnet<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Pick<span>
+</h5>
+<div style="text-align: center;" class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.3&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.3&disp=thd&attbid=ANGjdJ_Dw-sSZTVxzQKs_vSZqmQL9N5AYHRFL5FBaxytIVlUCGkvEaow9sW2R5B7OklDuUV-L8b6QNijkbOSyNpQvnNjcSk83K9PmxyJw84UkDr7olSAXqjJZHGTxQI&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>EL-S50B Quiz calculator<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Handheld computer<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.4&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.4&disp=thd&attbid=ANGjdJ8VnsTlwvaq9bz71Qk72YxgEwcASt5moDTXGNN5qxwDFeo5G3wNndIeLD8sIf8L9EqMfxZjghQw7OIztuYdPNyIYDtwmrzAuvjmB6tgDNb_cBzCc9TU9EEQMDw&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Trophy<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Coffee cup<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.5&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.5&disp=thd&attbid=ANGjdJ-ipXX62OOXwt8OQ5DVuJFrVuys2n7dqhGlUv5XD6MYKq_L8HVgz4WrZi5x84N30exPiO9Omm8nCaLRXsQ5lfVdZpxnCTvl4u4Fs3RdnzXjT3TxW-3DPiKZJX4&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Blue 8 card<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Remote Control<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.6&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.6&disp=thd&attbid=ANGjdJ_fOA_f6KhlQJ2kfrxUi0pDUON29ETo5Ozvc8hulMOBk-PYdb1quqYLA_dfTWjV0y_Fqm5T22Ui3K6V3Z4IlvFdqSy1CDBx13CWpZ4c9Cjb9mj4Lny-IcO3yTs&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Cola can<span>
+</h5>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Pencil sharpener<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>Mobilenet Model was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.7&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.7&disp=thd&attbid=ANGjdJ9FkJAYajyapFP6n3-5hHTDvm-dSYgkNRZDF0fW4Qtds8SapzSOp1XnvlSSIC5Lajf6IFDgTb9s2UcPhOQb1J9ZmUa4RjipDk8PQZRRFstEBhdeoNX7vmlToAc&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Toy dinosaur<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Seatbelt<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.8&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.8&disp=thd&attbid=ANGjdJ-nLHv_Cc_LAjZc1fnFr8Q_4o1qitmziws5uE949pXN5aZ-rDkGzVF8whVi-a4j8XuI-2453vIf4z6Z7mhqfURkiDAuaFP9U-p2ANI_RwpYibhJhtlAdXdZ4G0&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Mug<span>
+</h5>
+<h5 style="background-color: rgb(255, 144, 144); border: 2px solid rgb(163, 0, 0); border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Mixing bowl<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>GOOGLE LENS was more accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.9&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.9&disp=thd&attbid=ANGjdJ9tw4-ES4jLHiCRim3SMKvhLj0MgCIgq-q69izsvBXwWjrWmAzyLhS9NpHw-efaOC06Empmdq8cJhBMpFmWnoC864N3iYbPDD_O4YoCWaSPc9H7EUz5ay9fZdA&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Banana<span>
+</h5>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Banana<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>They were both accurate</h4>
+</div>
+</div>
+<br>
+<div class="test_image_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - <b>
+<img id="one" src="https://mail.google.com/mail/u/0?ui=2&ik=15e0dc2adb&attid=0.10&permmsgid=msg-f:1727408611809789617&th=17f8fcfaf0df86b1&view=fimg&realattid=b2aa2b2824fccd81_0.10&disp=thd&attbid=ANGjdJ-ghd-4ioRm5V46PEcuo9ociGGtxaZ02lIqMzNpuuYhw7rRoPEbj70qZ6fAxvhYaQFwMx-ch_DSqYs4HJaCaVwh7uuvYGyMiWscco5mRuZgkxTdW04lLVh7LRo&ats=2524608000000&sz=w1366-h657">
+</li>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>GOOGLE LENS</b> - 
+<span>Basketball<span>
+</h5>
+<h5 style="background-color: lightgreen; border: 2px solid darkgreen; border-radius: 20px;" class="col-sm-4 col-xs-12">The Output on <b>Mobilenet Model</b> - 
+<span>Basketball<span>
+</h5>
+<div class="mini_result" class="col-xs-12">
+<h4>Result - </h4>
+<hr>
+<h4>They were both accurate</h4>
+</div>
+</div>
+<br>
+</ol>
+</div>
+<br>
+<div style="background-color: lightcyan; border: 2px solid cyan; width: 500px;" class="container">
+<h4>Conclusion-</h4>
+<p>GOOGLE LENS is the winner! It got 9/10 of the images right while the Mobilenet Model only got 3/10 of them right.</p>
+</div>
+<br>
+<div class="copy_right_footer">
+sHADEED was here ( ͡° ͜ʖ ͡°)
+</div>
+</center>
+</body>
+</html>
